@@ -3,6 +3,7 @@ run_analysis <- function(){
     
     
     library(readr)
+    library(dplyr)
     
     # Download Human Activity Recognition Using Smartphones (HARUS for short) Data Set  (a zip file).
     # We download this file into temporay file created in local file system.
@@ -241,6 +242,10 @@ run_analysis <- function(){
     # Remove HARUS data set zip file created in the beginning of the script.
     
     unlink(tempFileForDataSet)
+    
+    # Save dataset into local disk under working directory
+    
+    write.table(tidyDataSet, file="./tidyDataSet")
     
     # Return tidy data set
     

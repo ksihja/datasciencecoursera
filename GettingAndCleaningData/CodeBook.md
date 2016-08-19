@@ -24,7 +24,17 @@ Before starting actual processing raw data was checked against possible NA value
 ##Creating the tidy datafile
 
 ###Guide to create the tidy data file
-Description on how to create the tidy data file (1. download the data, ...)/
+
+Steps for creating tidy data set were based on the processing steps defined in assigment. In a high level following steps were made to prepare tidy data set5:
+
+* raw data was downloaded into local disc
+* training and test data were combined together to form one data set containing all 30 person's data
+* Mean and standard deviation type of measurements (features) were selected from 561 original measurements
+* New tidy data set was formed from combined data. Tidy data sets observation were 180 possible combinations of test person (a.k.a subject) and activity he/she was doing. Mean value of each of the filtered features was then calculated per each (subject,activity) combination
+* AS a result was a tidy data set with 180 rows and 68 colums was created.
+
+For more details see 
+[README](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/README.md).
 
 ###Cleaning of the data
 Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()

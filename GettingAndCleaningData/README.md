@@ -27,6 +27,7 @@ Processing steps in run_analysis() script itself contains more detailed informat
 * Download [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) (HARUS for short later in text).
 
 * Step 1 ("Merges the training and the test sets to create one data set"): 
+
 Read all files that are needed for this step.  
 Files needed areUCI HAR Dataset/train/X_train.txt,  UCI HAR Dataset/train/y_train.txt,  UCI HAR Dataset/train/subject_train.txt,  UCI HAR Dataset/test/X_test.txt,  UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt. 
 

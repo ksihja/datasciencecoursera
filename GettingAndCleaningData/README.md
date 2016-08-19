@@ -26,9 +26,9 @@ Processing steps in run_analysis() script itself contains more detailed informat
 
 * Download [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) (HARUS for short later in text).
 
-* Read all files that are needed for Step 1 of assignment: "Merges the training and the test sets to create one data set" . 
-
-Needed files in this step are UCI HAR Dataset/train/X_train.txt,  UCI HAR Dataset/train/y_train.txt,  UCI HAR Dataset/train/subject_train.txt,  UCI HAR Dataset/test/X_test.txt,  UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt. 
+* Step 1 ("Merges the training and the test sets to create one data set"): 
+Read all files that are needed for this step.  
+Files needed areUCI HAR Dataset/train/X_train.txt,  UCI HAR Dataset/train/y_train.txt,  UCI HAR Dataset/train/subject_train.txt,  UCI HAR Dataset/test/X_test.txt,  UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt. 
 
 Training files containing subject ids, activity ids and measures of feature vectors are then combined into one data.frame. Every training data file has 7352 rows so these can be attached together with cbind(). 
 
@@ -36,7 +36,7 @@ Files in test set has 2947 rows so these are also combined with cbind().
 
 Lastly combined traing data and test data are attached together by adding combined test data after combined training data row by row. 
 
-* Execute Step 2 of assignment: "Extracts only the measurements on the mean and standard deviation for each measurement". 
+* Step 2 ("Extracts only the measurements on the mean and standard deviation for each measurement"): 
 
 To be able to decide which feature measurements are mean or standard deviation type we need to have names for features. These are found in file UCI HAR Dataset/features.txt. This file contais 561 rows (one for each feature) and each row has two values: numeric column index referring a column in feature measurent file (UCI HAR Dataset/train/X_train.txt and UCI HAR Dataset/test/X_test.txt) and textual feature name matching to that column. 
 

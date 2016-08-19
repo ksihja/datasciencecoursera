@@ -29,7 +29,8 @@ run_analysis <- function(){
     
     # 1A.) Reading trainig set train/X_train.txt. This file contains values for 561 features for 
     # those subjects who has been selected to be part of training set.
-    # File is read with read_fwf since X_train.txt is fixed width file with 16 characters per field.
+    # File is read into R with read_fwf since X_train.txt is fixed width file with 16 characters
+    # per field.
     
     trainingDataFilePath = paste(rootDirectoryInZipFile, "/train/X_train.txt", sep ="")
     trainingData <- read_fwf(trainingDataFilePath, fwf_widths(as.vector(rep(16,561), "numeric"))) 
@@ -51,7 +52,8 @@ run_analysis <- function(){
     
     # 1D.) Combining trainingSubject, activityLabelsForTraining and trainingData into a one data 
     # frame. TrainingSubject will be first colum, trainingactivity second and 561 component feature vector 
-    # is found after these 2 colums in combined data frame.
+    # is found after these 2 colums in combined data frame. All columns to be combined contains 
+    # 7352 rows so they can be naturally added side-by-side as columns of combined data frame..
     
     combinedTrainingSet <- cbind(trainingSubject, activityLabelsForTraining, trainingData)
  
@@ -98,9 +100,9 @@ run_analysis <- function(){
     featureNames <- read.csv( featureNamesFilePath, stringsAsFactors = FALSE, 
                               header = FALSE, sep = " ", col.names=c("featureid", "featurename"))
   
-    # Calculate index position for each of the std() and mean() measuremnt using feature names read from
-    # features.txt. We add 2 in each calculated index since in combinedSet which we are filtering contains
-    # 2 columns in front of features (subjectid and activityId).
+    # Calculate index position for each of the std() and mean() measurement using feature names read from
+    # features.txt. We add 2 in each calculated index since combinedSet which we are filtering contains
+    # 2 extra columns in front of features columns (subjectid and activityId).
     
     indexesForStdAndMeanMeasuremensInDataSet <- grep("^.*mean\\(\\)|std\\(\\).*", featureNames$featurename) + 2
     
@@ -245,7 +247,7 @@ run_analysis <- function(){
     
     # Save dataset into local disk under working directory
     
-    write.table(tidyDataSet, file="./tidyDataSet")
+    write.table(tidyDataSet, file="./tidyDataSet.txt")
     
     # Return tidy data set
     

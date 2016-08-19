@@ -42,7 +42,7 @@ Similar column naming is used also files in test set.
 
 Training files containing subject ids (column name "subjectid"), activity ids ("activityid") and measures of feature vectors are then combined into one data frame. Every training data file has 7352 rows so these can be attached together with cbind(). 
 
-AS a result we get a data frame with 7352 rows and 563 columns. Columns are like: "subjectid", "activityid" followed by 561 feature columns.
+As a result we get a data frame with 7352 rows and 563 columns. Columns are like: "subjectid", "activityid" followed by 561 feature columns.
 
 Files in test set has 2947 rows so these are also combined with cbind(). Columns are similar than in combined training set.
 

@@ -46,6 +46,28 @@ There were no need for NA value handling since none were found. Cleaning of the 
  
  - Dimensions of the resulted tidy dat set was 180 rows x 68 colums. 180 represents number of observations (30 persons doing 6 different activities). First column is "subjectid", second is "activityname" and rest of the 66 columns are mean values of selected features over each observation. See dimensions by command `> dim(tData)tData`
  - For summarizing the data use commands `> head(tData)` and `>str(tData)`
+ 
+head:
+
+   subjectid       activityname meanoftBodyAccmeanX meanoftBodyAccmeanY meanoftBodyAccmeanZ meanoftBodyAccstdX meanoftBodyAccstdY
+1         1             LAYING           0.2215982        -0.040513953          -0.1132036        -0.92805647       -0.836827406
+2         1            SITTING           0.2612376        -0.001308288          -0.1045442        -0.97722901       -0.922618642
+3         1           STANDING           0.2789176        -0.016137590          -0.1106018        -0.99575990       -0.973190056
+4         1            WALKING           0.2773308        -0.017383819          -0.1111481        -0.28374026        0.114461337
+5         1 WALKING_DOWNSTAIRS           0.2891883        -0.009918505          -0.1075662         0.03003534       -0.031935943
+6         1   WALKING_UPSTAIRS           0.2554617        -0.023953149          -0.0973020        -0.35470803       -0.002320265
+
+str:
+
+'data.frame':	180 obs. of  68 variables:
+ $ subjectid                     : int  1 1 1 1 1 1 2 2 2 2 ...
+ $ activityname                  : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
+ $ meanoftBodyAccmeanX           : num  0.222 0.261 0.279 0.277 0.289 ...
+ $ meanoftBodyAccmeanY           : num  -0.04051 -0.00131 -0.01614 -0.01738 -0.00992 ...
+ $ meanoftBodyAccmeanZ           : num  -0.113 -0.105 -0.111 -0.111 -0.108 ...
+ 
+ 
+
  - Names of the variables in data set can be seen by issuing command `> names(tData)`
  
 [1] "subjectid"                      "activityname"                   "meanoftBodyAccmeanX"           
@@ -68,7 +90,7 @@ There were no need for NA value handling since none were found. Cleaning of the 
 [52] "meanoffBodyAccJerkstdX"         "meanoffBodyAccJerkstdY"         "meanoffBodyAccJerkstdZ"        
 [55] "meanoffBodyGyromeanX"           "meanoffBodyGyromeanY"           "meanoffBodyGyromeanZ"          
 [58] "meanoffBodyGyrostdX"            "meanoffBodyGyrostdY"            "meanoffBodyGyrostdZ"           
-[61] "meanoffBodyAccMagmean"          "meanoffBodyAccMagstd"           "meanoffBodyBodyAccJerkMagmean" 
+[61] "meanoffBodyAccMagmean"          "meanoffBodyAccMagstd"           "meanoffBodyBodyAccJerkMagmean"
 [64] "meanoffBodyBodyAccJerkMagstd"   "meanoffBodyBodyGyroMagmean"     "meanoffBodyBodyGyroMagstd"     
 [67] "meanoffBodyBodyGyroJerkMagmean" "meanoffBodyBodyGyroJerkMagstd" 
 

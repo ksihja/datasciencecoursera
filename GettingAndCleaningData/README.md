@@ -104,7 +104,7 @@ Resulting data set size is 180 rows x 68 columns.
 
 As a last action we still modify column names for features so that they contain information that instead of features in data frame in step 4 columns now contain mean of feature vector. This is accomplished by adding a string "meanof" in the beginning of each of the 66 feature vector's mean value column.
 
-Finally we remove temmpoary file containig HARUS data set zip file from local disk and write resulting tidy data set with name "tidyDataSet.txt" into R's working directory.
+Finally we remove temporary file containig HARUS data set zip file from local disk and write resulting tidy data set with name "tidyDataSet.txt" into R's working directory.
 
 So our final tidy data set has 180 rows (number of observations) and 68 colums named: "subjectid", "activityname" and 66 descriptive feature vector names (  meanoftBodyAccmeanX, meanoftBodyAccmeanY ... ). 
 

@@ -66,7 +66,23 @@ Activity labels are first read into R from UCI HAR Dataset/activity_labels.txt. 
 
 Data frame created in step 2 is then mutated by adding new column "activityname" as a last column in data frame. Value for activity name can be deduced by matching value of "activityid" column from activity_labels.txt with value of "activityid" in data frame from step 2.
 
-As a result we get data frame with 10299 rows and 69 columns. Columns are like: "subjectid", "activityid" followed by 66 filtered feature columns without programmatically defined name and last column is mutated "activityname".
+Further ordering of resulted data frame is made by moving added "activityname" column from last position to second position right after first "subjectid" column. This is made for making it easier to see in quick glance that mutated column indeed is added in data frame. 
+
+As a result we get data frame with 10299 rows and 69 columns. Columns are like: "subjectid", "activityname", "activityid" followed by 66 filtered feature columns without programmatically defined name.
+
+* Step 4 ("Appropriately labels the data set with descriptive variable names"):
+
+Data frame still have no descriptive names for 66 feature colums. 
+
+We reuse first feature names that we read into R in step 2. We filter feature names using same regular expression than in step 2 but now we instruct grep to return feature names instead of index (that was used in step 2).
+
+After receiving vector of names for filtered features we beautify these names a little further. All '-', '(' and ')' characters are removed from feature names to make them contain only alphabetical characters. Capital letters are not removed from feature names since they are more readable for human eys with capital letters left even though further R-processing is easier with lower case letters only. Conversion to lower case is trivial with tolower() function if needed.
+
+As a last step modified feature names are inserted into data frames names()  after first 3 columns.
+
+As a result we get data frame with 10299 rows and 69 columns. Columns are like: "subjectid", "activityname", "activityid" followed by 66 filtered feature columns where naming is now descriptive (i.e feature column with name "V1" is changed to "tBodyAccmeanX" and so on).
+
+AS a last 
 
 ##README.md
 (this file): Overview of all files in this directory

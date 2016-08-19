@@ -1,14 +1,10 @@
----
-title: "Codebook template"
-author: "Your name here"
-date: "The date here"
-output:
-  html_document:
-    keep_md: yes
----
 
 ## Project Description
-Short description of the project
+Aim of this project was to prepare tidy data set from [Human Activity Recognition Using Smartphones Data Set] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) (HARUS for short now on). For short HARUS was created by observing smart phones's accelerometer and gyroscope recordings when 30 volunteers were performing six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone. 
+
+Tidy data set should contain mean value observations of sub set of measurements offered by HARUS data. Filtering of measurement's from original data is based on whether measurement is mean or standard deviation type of measurement.
+
+From this filtered set of measurement mean value of each measurement is then calculated per observation. Observation is a combination of person and an activity he/she is performing.
 
 ##Study design and data processing
 

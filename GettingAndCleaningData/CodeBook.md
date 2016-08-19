@@ -106,15 +106,23 @@ str:
 [67] "meanoffrequencydomainBodyBodyGyroJerkMagmean" "meanoffrequencydomainBodyBodyGyroJerkMagstd"
 
 ###subjectid 
-Short description of what the variable describes.
 
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
+int type identifier for test person. Values of this variable are betwee [1,30].
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+This variable has no unit.
+
+###activityname 
+
+Factor type specifying different activities. This factor has 6 levels.
+This variable has no unit.
+
+`> unique(tData$activityname)`
+
+[1] LAYING             SITTING            STANDING           WALKING            WALKING_DOWNSTAIRS
+
+[6] WALKING_UPSTAIRS  
+
+Levels: LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS
 
 ###Details of features naming convention
 

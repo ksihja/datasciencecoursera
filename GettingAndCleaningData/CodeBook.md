@@ -135,6 +135,9 @@ Based on the information provided in these 2 files there are following parts fro
 * "Mag" means magnitude and it is not converted during processing 
 * "Body" means effects of body movements in accelometers recordings during person's activities. It is not further converted during processing
 * "Gravity" means effect of gravity in accelometers recordings during person's activities. It is not further converted during processing
+* "std()" means calculation of standard deviation. Parenthesis are removed from this name during processing.
+* "mean()" means calculation of mean value. Parenthesis are removed from this name during processing.
+* "X", "Y" and "Z" refers orthogonal components of measurements along axis in 3-dimensional space
 
 Desicion which feature name components were converted during processing was based mainly by names readibility by human. Converting everything into the longer names would produce extremely long column names and while those poses no problems for automatic R processing I felt that for human eyes choices made were a decent ones.
 

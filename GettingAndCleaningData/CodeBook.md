@@ -50,11 +50,17 @@ There were no need for NA value handling since none were found. Cleaning of the 
 str:
 
 'data.frame':	180 obs. of  68 variables:
+
  $ subjectid                     : int  1 1 1 1 1 1 2 2 2 2 ...
+ 
  $ activityname                  : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
+ 
  $ meanoftBodyAccmeanX           : num  0.222 0.261 0.279 0.277 0.289 ...
+ 
  $ meanoftBodyAccmeanY           : num  -0.04051 -0.00131 -0.01614 -0.01738 -0.00992 ...
+ 
  $ meanoftBodyAccmeanZ           : num  -0.113 -0.105 -0.111 -0.111 -0.108 ...
+ 
  
  
 

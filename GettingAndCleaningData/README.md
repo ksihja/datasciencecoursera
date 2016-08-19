@@ -92,7 +92,7 @@ Processing in this step is closely connected to [Tidy data article](http://vita.
 
 For principle 3. we don't need to do anything. We already have one data frame containing observations of only one type: calculated feature vectors per subject and activity.
 
-For principle 2. We are observing (calculating) means values for feature vectors for each combination of subject and activity. Subject and activity are specified by columns subjectid and activityname. When we first split our data set based on these two variables to obtain all combination of these 2 variables and then calculate mean values of all features over specific (subjectid, activityname)  combination we reach the tidy data goal by having one observation per row. 
+For principle 2. We are observing (calculating) mean values for feature vectors for each combination of subject and activity. Subject and activity are specified by columns subjectid and activityname. When we first split our data set based on these two variables to obtain all combination of these 2 variables and then calculate mean values of all features over specific (subjectid, activityname)  combination we reach the tidy data goal by having one observation per row. 
 
 This observation is of form: subjectid, activityname and 66 columns containing mean value for each feature vector  per this (subjectid, activity) combination. Mean value for activityid column is also calculated but that column is not part of tidy data and is removed in later phase (see below).
 

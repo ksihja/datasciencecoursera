@@ -51,44 +51,59 @@ str:
 
 'data.frame':	180 obs. of  68 variables:
 
- $ subjectid                     : int  1 1 1 1 1 1 2 2 2 2 ...
+ $ subjectid                                   : int  1 1 1 1 1 1 2 2 2 2 ...
  
- $ activityname                  : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
+ $ activityname                                : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
  
- $ meanoftBodyAccmeanX           : num  0.222 0.261 0.279 0.277 0.289 ...
+ $ meanoftimedomainBodyAccmeanX                : num  0.222 0.261 0.279 0.277 0.289 ...
  
- $ meanoftBodyAccmeanY           : num  -0.04051 -0.00131 -0.01614 -0.01738 -0.00992 ...
+ $ meanoftimedomainBodyAccmeanY                : num  -0.04051 -0.00131 -0.01614 -0.01738 -0.00992 ...
  
- $ meanoftBodyAccmeanZ           : num  -0.113 -0.105 -0.111 -0.111 -0.108 ...
+ $ meanoftimedomainBodyAccmeanZ                : num  -0.113 -0.105 -0.111 -0.111 -0.108 ...
  
+ $ meanoftimedomainBodyAccstdX                 : num  -0.928 -0.977 -0.996 -0.284 0.03 ...
  
+ $ meanoftimedomainBodyAccstdY                 : num  -0.8368 -0.9226 -0.9732 0.1145 -0.0319 ...
+ 
+ $ meanoftimedomainBodyAccstdZ                 : num  -0.826 -0.94 -0.98 -0.26 -0.23 ...
  
 
  - Names of the variables in data set can be seen by issuing command `> names(tData)`
  
-[1] "subjectid"                      "activityname"                   "meanoftBodyAccmeanX"           
-[4] "meanoftBodyAccmeanY"            "meanoftBodyAccmeanZ"            "meanoftBodyAccstdX"            
-[7] "meanoftBodyAccstdY"             "meanoftBodyAccstdZ"             "meanoftGravityAccmeanX"        
-[10] "meanoftGravityAccmeanY"         "meanoftGravityAccmeanZ"         "meanoftGravityAccstdX"         
-[13] "meanoftGravityAccstdY"          "meanoftGravityAccstdZ"          "meanoftBodyAccJerkmeanX"       
-[16] "meanoftBodyAccJerkmeanY"        "meanoftBodyAccJerkmeanZ"        "meanoftBodyAccJerkstdX"        
-[19] "meanoftBodyAccJerkstdY"         "meanoftBodyAccJerkstdZ"         "meanoftBodyGyromeanX"          
-[22] "meanoftBodyGyromeanY"           "meanoftBodyGyromeanZ"           "meanoftBodyGyrostdX"           
-[25] "meanoftBodyGyrostdY"            "meanoftBodyGyrostdZ"            "meanoftBodyGyroJerkmeanX"      
-[28] "meanoftBodyGyroJerkmeanY"       "meanoftBodyGyroJerkmeanZ"       "meanoftBodyGyroJerkstdX"       
-[31] "meanoftBodyGyroJerkstdY"        "meanoftBodyGyroJerkstdZ"        "meanoftBodyAccMagmean"         
-[34] "meanoftBodyAccMagstd"           "meanoftGravityAccMagmean"       "meanoftGravityAccMagstd"       
-[37] "meanoftBodyAccJerkMagmean"      "meanoftBodyAccJerkMagstd"       "meanoftBodyGyroMagmean"        
-[40] "meanoftBodyGyroMagstd"          "meanoftBodyGyroJerkMagmean"     "meanoftBodyGyroJerkMagstd"     
-[43] "meanoffBodyAccmeanX"            "meanoffBodyAccmeanY"            "meanoffBodyAccmeanZ"           
-[46] "meanoffBodyAccstdX"             "meanoffBodyAccstdY"             "meanoffBodyAccstdZ"            
-[49] "meanoffBodyAccJerkmeanX"        "meanoffBodyAccJerkmeanY"        "meanoffBodyAccJerkmeanZ"       
-[52] "meanoffBodyAccJerkstdX"         "meanoffBodyAccJerkstdY"         "meanoffBodyAccJerkstdZ"        
-[55] "meanoffBodyGyromeanX"           "meanoffBodyGyromeanY"           "meanoffBodyGyromeanZ"          
-[58] "meanoffBodyGyrostdX"            "meanoffBodyGyrostdY"            "meanoffBodyGyrostdZ"           
-[61] "meanoffBodyAccMagmean"          "meanoffBodyAccMagstd"           "meanoffBodyBodyAccJerkMagmean"
-[64] "meanoffBodyBodyAccJerkMagstd"   "meanoffBodyBodyGyroMagmean"     "meanoffBodyBodyGyroMagstd"     
-[67] "meanoffBodyBodyGyroJerkMagmean" "meanoffBodyBodyGyroJerkMagstd" 
+[1] "subjectid"                                    "activityname"                                
+ [3] "meanoftimedomainBodyAccmeanX"                 "meanoftimedomainBodyAccmeanY"                
+ [5] "meanoftimedomainBodyAccmeanZ"                 "meanoftimedomainBodyAccstdX"                 
+ [7] "meanoftimedomainBodyAccstdY"                  "meanoftimedomainBodyAccstdZ"                 
+ [9] "meanoftimedomainGravityAccmeanX"              "meanoftimedomainGravityAccmeanY"             
+[11] "meanoftimedomainGravityAccmeanZ"              "meanoftimedomainGravityAccstdX"              
+[13] "meanoftimedomainGravityAccstdY"               "meanoftimedomainGravityAccstdZ"              
+[15] "meanoftimedomainBodyAccJerkmeanX"             "meanoftimedomainBodyAccJerkmeanY"            
+[17] "meanoftimedomainBodyAccJerkmeanZ"             "meanoftimedomainBodyAccJerkstdX"             
+[19] "meanoftimedomainBodyAccJerkstdY"              "meanoftimedomainBodyAccJerkstdZ"             
+[21] "meanoftimedomainBodyGyromeanX"                "meanoftimedomainBodyGyromeanY"               
+[23] "meanoftimedomainBodyGyromeanZ"                "meanoftimedomainBodyGyrostdX"                
+[25] "meanoftimedomainBodyGyrostdY"                 "meanoftimedomainBodyGyrostdZ"                
+[27] "meanoftimedomainBodyGyroJerkmeanX"            "meanoftimedomainBodyGyroJerkmeanY"           
+[29] "meanoftimedomainBodyGyroJerkmeanZ"            "meanoftimedomainBodyGyroJerkstdX"            
+[31] "meanoftimedomainBodyGyroJerkstdY"             "meanoftimedomainBodyGyroJerkstdZ"            
+[33] "meanoftimedomainBodyAccMagmean"               "meanoftimedomainBodyAccMagstd"               
+[35] "meanoftimedomainGravityAccMagmean"            "meanoftimedomainGravityAccMagstd"            
+[37] "meanoftimedomainBodyAccJerkMagmean"           "meanoftimedomainBodyAccJerkMagstd"           
+[39] "meanoftimedomainBodyGyroMagmean"              "meanoftimedomainBodyGyroMagstd"              
+[41] "meanoftimedomainBodyGyroJerkMagmean"          "meanoftimedomainBodyGyroJerkMagstd"          
+[43] "meanoffrequencydomainBodyAccmeanX"            "meanoffrequencydomainBodyAccmeanY"           
+[45] "meanoffrequencydomainBodyAccmeanZ"            "meanoffrequencydomainBodyAccstdX"            
+[47] "meanoffrequencydomainBodyAccstdY"             "meanoffrequencydomainBodyAccstdZ"            
+[49] "meanoffrequencydomainBodyAccJerkmeanX"        "meanoffrequencydomainBodyAccJerkmeanY"       
+[51] "meanoffrequencydomainBodyAccJerkmeanZ"        "meanoffrequencydomainBodyAccJerkstdX"        
+[53] "meanoffrequencydomainBodyAccJerkstdY"         "meanoffrequencydomainBodyAccJerkstdZ"        
+[55] "meanoffrequencydomainBodyGyromeanX"           "meanoffrequencydomainBodyGyromeanY"          
+[57] "meanoffrequencydomainBodyGyromeanZ"           "meanoffrequencydomainBodyGyrostdX"           
+[59] "meanoffrequencydomainBodyGyrostdY"            "meanoffrequencydomainBodyGyrostdZ"           
+[61] "meanoffrequencydomainBodyAccMagmean"          "meanoffrequencydomainBodyAccMagstd"          
+[63] "meanoffrequencydomainBodyBodyAccJerkMagmean"  "meanoffrequencydomainBodyBodyAccJerkMagstd"  
+[65] "meanoffrequencydomainBodyBodyGyroMagmean"     "meanoffrequencydomainBodyBodyGyroMagstd"     
+[67] "meanoffrequencydomainBodyBodyGyroJerkMagmean" "meanoffrequencydomainBodyBodyGyroJerkMagstd"
 
 ###subjectid 
 Short description of what the variable describes.

@@ -45,6 +45,7 @@ There were no need for NA value handling since none were found. Cleaning of the 
  **NOTE**: *For checking tidy data set characteristic's with R commands given below you need to download [tidy data set](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/tidyDataSet.txt) into your local disc in R's working directory and issue following command `> tData <- read.table("tidyDataSet.txt")`*
  
  - Dimensions of the resulted tidy dat set was 180 rows x 68 colums. 180 represents number of observations (30 persons doing 6 different activities). First column is "subjectid", second is "activityname" and rest of the 66 columns are mean values of selected features over each observation. See dimensions by command `> dim(tData)tData`
+ - We use terminology "feature variables" below to refer 66 mean value features
  - For summarizing the data use commands `> head(tData)` and `>str(tData)`
 
 str:
@@ -105,13 +106,13 @@ str:
 [65] "meanoffrequencydomainBodyBodyGyroMagmean"     "meanoffrequencydomainBodyBodyGyroMagstd"     
 [67] "meanoffrequencydomainBodyBodyGyroJerkMagmean" "meanoffrequencydomainBodyBodyGyroJerkMagstd"
 
-###subjectid 
+###Variable subjectid 
 
 int type identifier for test person. Values of this variable are betwee [1,30].
 
 This variable has no unit.
 
-###activityname 
+###Variable activityname 
 
 Factor type specifying different activities. This factor has 6 levels.
 This variable has no unit.
@@ -124,7 +125,7 @@ This variable has no unit.
 
 Levels: LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS
 
-###Details of features naming convention
+###Details of feature variables naming convention
 
 HARUS data contains files "features_info.txt" and "READ_ME.txt" under data set zip file's root directory "UCI HAR Dataset". To check these files you need to get  [HARUS data set zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and unzip it to check these files. These files are not used (that is read into R) during R processing since they are meta information and so you need to explicitly unzip the data set zip file to glance those.  
 Based on the information provided in these 2 files there are following parts from which the feature name is composed of :
@@ -136,6 +137,13 @@ Based on the information provided in these 2 files there are following parts fro
 * "Gravity" means effect of gravity in accelometers recordings during person's activities. It is not further converted during processing
 
 Desicion which feature name components were converted during processing was based mainly by names readibility by human. Converting everythin into the longer names would produce extremely long column names and while those poses no problems for automatic R processing I felt that for human eyes choices made were a decent ones.
+
+###Common characteristics of feature variables
+
+There are following common characteriswtics with all feature variables
+
+* their type is numeric
+* their values are restricted to the [-1,1]. This follows from the fact that raw datas feature vectors are normalized and bounded within [-1,1] (see README.txt in HARUS data set).
 
 Short description of what the variable describes.
 
@@ -153,7 +161,9 @@ If available, some additional notes on the variable not covered elsewehere. If n
 ##Sources
 
 This CodeBook is based on the template from [Joris Schut](https://gist.github.com/JorisSchut/dbc1fc0402f28cad9b41)
-
+[HARUS data set zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+HARUS README.txt can be found under UCI HAR Dataset directory HARUS data set zip file
+HARUS features_info.txt can be found under UCI HAR Dataset directory HARUS data set zip file
 
 ##Annex
 If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)

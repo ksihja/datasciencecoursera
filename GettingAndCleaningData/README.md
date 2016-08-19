@@ -9,7 +9,7 @@ Tidy data set that is the outcome of assignment. For browsing produced data set 
 * download tidyDataSet file into working directory of your R session
 * load data set into R: 
 `> tData <- read.table("tidyDataSet.txt")`
-* check data visually using for example View: `> View(tidyDataSet)`
+* check data visually using for example View: `> View(tData)`
 
 ##CodeBook.md
 Code book explaining study design, creation steps for tidy data and description of variables in final tidy data set.

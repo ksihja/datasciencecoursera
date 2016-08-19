@@ -15,7 +15,10 @@ Tidy data set that is the outcome of assignment. For browsing produced data set 
 Code book explaining study design, creation steps for tidy data and description of variables in final tidy data set.
 
 ##run_analysis.R 
-R script used for getting and processing data. Analysis script is executed without any parameters ( `> run_analysis()` ) and it produces a tidy data set in the R working directory.  **NOTE** run_analysis.R follows steps that are defined in assignment exactly. For example in step 2 it would have been very simple process to name selected feature vectors with descriptive names but this was not done in this step since assignment requests this operation to be made in Step 4.
+R script used for getting and processing data. 
+Analysis script is executed without any parameters ( `> run_analysis()` ) and it produces a tidy data set in the R working directory. 
+
+**NOTE** *run_analysis.R follows steps that are defined in assignment exactly. For example in step 2 it would have been very simple process to name selected feature vectors with descriptive names but this was not done in this step since assignment requests this operation to be made in Step 4.*
 
 For definition of what tidy data is see [Hadley Wickham's "Tidy Data" article](http://vita.had.co.nz/papers/tidy-data.pdf).  
 

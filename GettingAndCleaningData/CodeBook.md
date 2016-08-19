@@ -40,8 +40,7 @@ For more details see
 
 There were no need for NA value handling since none were found. Cleaning of the data thus contained only filtering out unneeded portions of raw data. [README](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/README.md) contains detailed explanation explaining which parts ofr the data was discarded, in which phase of processing and why.
 
-##Description of the variables in the tiny_data.txt file
-General description of the file including:
+##Description of the variables in the tidyDataSet.txt file
  - Dimensions of the dataset
  - Summary of the data
  - Variables present in the dataset

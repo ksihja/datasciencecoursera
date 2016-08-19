@@ -140,7 +140,7 @@ Desicion which feature name components were converted during processing was base
 
 ###Common characteristics of feature variables (colums 3 to 68)
 
-There are following common characteriswtics with all feature variables
+There are following common characteristics with all feature variables
 
 * their type is numeric
 * their values are restricted to the [-1,1]. This follows from the fact that raw datas feature vectors are normalized and bounded within [-1,1] (see README.txt in HARUS data set).

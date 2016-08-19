@@ -40,7 +40,7 @@ X_train.txt -> data read as fixed width file but no colums are named during read
 
 Similar column naming is used also files in test set.
 
-Training files containing subject ids (column name "subjectid"), activity ids ("activityid") and measures of feature vectors are then combined into one data.frame. Every training data file has 7352 rows so these can be attached together with cbind(). 
+Training files containing subject ids (column name "subjectid"), activity ids ("activityid") and measures of feature vectors are then combined into one data frame. Every training data file has 7352 rows so these can be attached together with cbind(). 
 
 AS a result we get a data frame with 7352 rows and 563 columns. Columns are like: "subjectid", "activityid" followed by 561 feature columns.
 

@@ -18,6 +18,8 @@ Description of how the data was collected.
 ###Notes on the original (raw) data 
 Some additional notes (if avaialble, otherwise you can leave this section out).
 
+NO NA's found this was checked by all(colSums(is.na(x))==0)
+
 ##Creating the tidy datafile
 
 ###Guide to create the tidy data file
@@ -49,7 +51,8 @@ Some information on the variable including:
 If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
 
 ##Sources
-Sources you used if any, otherise leave out.
+
+This CodeBook is based on the template from [Jori Schut](https://gist.github.com/JorisSchut/dbc1fc0402f28cad9b41)
 
 ##Annex
 If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)

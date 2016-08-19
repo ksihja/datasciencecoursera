@@ -143,7 +143,7 @@ Desicion which feature name components were converted during processing was base
 There are following common characteristics with all feature variables
 
 * their type is numeric
-* their values are restricted to the [-1,1]. This follows from the fact that raw datas feature vectors are normalized and bounded within [-1,1] (see README.txt in HARUS data set).
+* their values are restricted to the [-1,1]. This follows from the fact that raw datas feature vectors are normalized and bounded within [-1,1]. See README.txt in HARUS data set for more.
 * Unit of measurement is not known (not specified in raw data)
 
 ###Variable names for feature variables

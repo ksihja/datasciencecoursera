@@ -144,6 +144,46 @@ There are following common characteriswtics with all feature variables
 
 * their type is numeric
 * their values are restricted to the [-1,1]. This follows from the fact that raw datas feature vectors are normalized and bounded within [-1,1] (see README.txt in HARUS data set).
+* Unit of measurement is not known (not specified in raw data)
+
+###Variable names for feature variables
+
+Feature variables occupy columns [3:68] in tidy dataset. To get names of all feature vaqriables issue command `> names(tData)[3:68]`
+
+[1] "meanoftimedomainBodyAccmeanX"                 "meanoftimedomainBodyAccmeanY"                
+ [3] "meanoftimedomainBodyAccmeanZ"                 "meanoftimedomainBodyAccstdX"                 
+ [5] "meanoftimedomainBodyAccstdY"                  "meanoftimedomainBodyAccstdZ"                 
+ [7] "meanoftimedomainGravityAccmeanX"              "meanoftimedomainGravityAccmeanY"             
+ [9] "meanoftimedomainGravityAccmeanZ"              "meanoftimedomainGravityAccstdX"              
+[11] "meanoftimedomainGravityAccstdY"               "meanoftimedomainGravityAccstdZ"              
+[13] "meanoftimedomainBodyAccJerkmeanX"             "meanoftimedomainBodyAccJerkmeanY"            
+[15] "meanoftimedomainBodyAccJerkmeanZ"             "meanoftimedomainBodyAccJerkstdX"             
+[17] "meanoftimedomainBodyAccJerkstdY"              "meanoftimedomainBodyAccJerkstdZ"             
+[19] "meanoftimedomainBodyGyromeanX"                "meanoftimedomainBodyGyromeanY"               
+[21] "meanoftimedomainBodyGyromeanZ"                "meanoftimedomainBodyGyrostdX"                
+[23] "meanoftimedomainBodyGyrostdY"                 "meanoftimedomainBodyGyrostdZ"                
+[25] "meanoftimedomainBodyGyroJerkmeanX"            "meanoftimedomainBodyGyroJerkmeanY"           
+[27] "meanoftimedomainBodyGyroJerkmeanZ"            "meanoftimedomainBodyGyroJerkstdX"            
+[29] "meanoftimedomainBodyGyroJerkstdY"             "meanoftimedomainBodyGyroJerkstdZ"            
+[31] "meanoftimedomainBodyAccMagmean"               "meanoftimedomainBodyAccMagstd"               
+[33] "meanoftimedomainGravityAccMagmean"            "meanoftimedomainGravityAccMagstd"            
+[35] "meanoftimedomainBodyAccJerkMagmean"           "meanoftimedomainBodyAccJerkMagstd"           
+[37] "meanoftimedomainBodyGyroMagmean"              "meanoftimedomainBodyGyroMagstd"              
+[39] "meanoftimedomainBodyGyroJerkMagmean"          "meanoftimedomainBodyGyroJerkMagstd"          
+[41] "meanoffrequencydomainBodyAccmeanX"            "meanoffrequencydomainBodyAccmeanY"           
+[43] "meanoffrequencydomainBodyAccmeanZ"            "meanoffrequencydomainBodyAccstdX"            
+[45] "meanoffrequencydomainBodyAccstdY"             "meanoffrequencydomainBodyAccstdZ"            
+[47] "meanoffrequencydomainBodyAccJerkmeanX"        "meanoffrequencydomainBodyAccJerkmeanY"       
+[49] "meanoffrequencydomainBodyAccJerkmeanZ"        "meanoffrequencydomainBodyAccJerkstdX"        
+[51] "meanoffrequencydomainBodyAccJerkstdY"         "meanoffrequencydomainBodyAccJerkstdZ"        
+[53] "meanoffrequencydomainBodyGyromeanX"           "meanoffrequencydomainBodyGyromeanY"          
+[55] "meanoffrequencydomainBodyGyromeanZ"           "meanoffrequencydomainBodyGyrostdX"           
+[57] "meanoffrequencydomainBodyGyrostdY"            "meanoffrequencydomainBodyGyrostdZ"           
+[59] "meanoffrequencydomainBodyAccMagmean"          "meanoffrequencydomainBodyAccMagstd"          
+[61] "meanoffrequencydomainBodyBodyAccJerkMagmean"  "meanoffrequencydomainBodyBodyAccJerkMagstd"  
+[63] "meanoffrequencydomainBodyBodyGyroMagmean"     "meanoffrequencydomainBodyBodyGyroMagstd"     
+[65] "meanoffrequencydomainBodyBodyGyroJerkMagmean" "meanoffrequencydomainBodyBodyGyroJerkMagstd" 
+
 
 Short description of what the variable describes.
 

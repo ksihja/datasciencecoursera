@@ -12,7 +12,7 @@ Files are as below:
 
 **CodeBook.md**: Code book explaining study design, creation steps for tidy data and description of variables in final tidy data set.
 
-**run_analysis.R**: R script used for getting and processing data. Analysis script is executed without any parameters ( `> run_analysis()` ) and it produces a tidy data set in the R working directory. 
+**run_analysis.R**: R script used for getting and processing data. Analysis script is executed without any parameters ( `> run_analysis()` ) and it produces a tidy data set in the R working directory.  **NOTE** run_analysis.R follows steps that are defined in assignment exactly. For example in step 2 it would have been very simple process to name selected feature vectors with descriptive names but this was not done in this step since assignment requests this operation to be made in Step 4.
 
 For definition of what tidy data is see [Hadley Wickham's "Tidy Data" article](http://vita.had.co.nz/papers/tidy-data.pdf).  
 
@@ -34,8 +34,12 @@ Lastly combined traing data and test data are attached together by adding combin
 
 To be able to decide which feature measurements are mean or standard deviation type we need to have names for features. These are found in file UCI HAR Dataset/features.txt. This file contais 561 rows (one for each feature) and each row has two values: numeric column index referring a column in feature measurent file (UCI HAR Dataset/train/X_train.txt and UCI HAR Dataset/test/X_test.txt) and textual feature name matching to that column. 
 
-When feature names are read into data.frame we are using grep and regular expression to find out all feature names containing string 'std()' or 'mean()' somewhere in the feature name. Set of feature names found with this logic is measurements that is requested in step 2. 
+When feature names are read into data.frame we are using grep and regular expression to find out all feature names containing string 'std()' or 'mean()' somewhere in the feature name. Set of feature names found with this logic is measurements that is requested in step 2. Grep command returns indexes of features whose name matches to regular expression filter. 
 
-**NOTE** *Additional vectors (see UCI HAR Dataset/features_info.txt for gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean and tBodyGyroJerkMean) are intentionally left out (regular expression dicards these since they dont have '()' after feature name). Decision to leave these vectors out is based on interpretation of information in features_info.txt and features.txt where it can be seen that these additional vectors are present only in last 7 features as a parameter for angle() feature. Similarly features having meanFreq() in their name is also left out since features_info.txt clearly gives this features different meaning than clear mean() value calculation.*
+**NOTE** *Additional vectors (see UCI HAR Dataset/features_info.txt for gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean and tBodyGyroJerkMean) are intentionally left out (regular expression discards these since they dont have '()' after feature name). Decision to leave these vectors out is based on interpretation of information in features_info.txt and features.txt where it can be seen that these additional vectors are present only in last 7 features as a parameter for angle() feature. Similarly features having meanFreq() in their name is also left out since features_info.txt clearly gives this features different meaning than plain mean() value calculation.*
+
+After calculating indexes for requested features we create new data frame subsetting the data frame created in Step 1 with calculated index positions of requested features.
+
+
 
 **README.md** (this file): Overview of all files in this directory

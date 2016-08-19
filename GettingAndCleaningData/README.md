@@ -64,7 +64,9 @@ As a result we get data frame with 10299 rows and 68 columns. Columns are like: 
 
 Activity labels are first read into R from UCI HAR Dataset/activity_labels.txt. During reading 2 columns in activity_labels.txt file are named as "activityid" and "activityname".  
 
-Data frame created in step 2 is then mutated by adding new column "activityname" as a last column in data frame.Value for activity can be deduced by matching  
+Data frame created in step 2 is then mutated by adding new column "activityname" as a last column in data frame. Value for activity name can be deduced by matching value of "activityid" column from activity_labels.txt with value of "activityid" in data frame from step 2.
+
+As a result we get data frame with 10299 rows and 69 columns. Columns are like: "subjectid", "activityid" followed by 66 filtered feature columns without programmatically defined name and last column is mutated "activityname".
 
 ##README.md
 (this file): Overview of all files in this directory

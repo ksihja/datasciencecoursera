@@ -62,7 +62,7 @@ As a result we get data frame with 10299 rows and 68 columns. Columns are like: 
 
 * Step 3 ("Uses descriptive activity names to name the activities in the data set"):
 
-Activity labels are first read into R from UCI HAR Dataset/activity_labels.txt.  
+Activity labels are first read into R from UCI HAR Dataset/activity_labels.txt. During reading 2 columns in activity_labels.txt file are named as "activityid" and "activityname".  
 
 Data frame created in step 2 is then mutated by adding new column "activityname" as a last column in data frame.Value for activity can be deduced by matching  
 

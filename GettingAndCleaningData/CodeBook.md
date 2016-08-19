@@ -106,13 +106,13 @@ str:
 [65] "meanoffrequencydomainBodyBodyGyroMagmean"     "meanoffrequencydomainBodyBodyGyroMagstd"     
 [67] "meanoffrequencydomainBodyBodyGyroJerkMagmean" "meanoffrequencydomainBodyBodyGyroJerkMagstd"
 
-###Variable subjectid 
+###Variable subjectid (column 1)
 
 int type identifier for test person. Values of this variable are between [1,30].
 
 This variable has no unit.
 
-###Variable activityname 
+###Variable activityname (column 2)
 
 Factor type specifying different activities. This factor has 6 levels.
 This variable has no unit.
@@ -138,7 +138,7 @@ Based on the information provided in these 2 files there are following parts fro
 
 Desicion which feature name components were converted during processing was based mainly by names readibility by human. Converting everythin into the longer names would produce extremely long column names and while those poses no problems for automatic R processing I felt that for human eyes choices made were a decent ones.
 
-###Common characteristics of feature variables
+###Common characteristics of feature variables (colums 3 to 68)
 
 There are following common characteriswtics with all feature variables
 

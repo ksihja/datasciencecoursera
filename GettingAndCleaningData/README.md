@@ -18,9 +18,9 @@ For definition of what tidy data is see [Hadley Wickham's "Tidy Data" article](h
 
 Processing steps in run_analysis(), scrip itself contains more detailed information connected to each of the steps below:
 
-0. Download [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) (HARUS for short later in text).
+* Download [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) (HARUS for short later in text).
 
-1. Read all files that are needed for Step 1 of assignment: "Merges the training and the test sets to create one data set" . 
+* Read all files that are needed for Step 1 of assignment: "Merges the training and the test sets to create one data set" . 
 
 Needed files in this step are UCI HAR Dataset/train/X_train.txt,  UCI HAR Dataset/train/y_train.txt,  UCI HAR Dataset/train/subject_train.txt,  UCI HAR Dataset/test/X_test.txt,  UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt. 
 
@@ -30,7 +30,7 @@ Files in test set has 2947 rows so these are also combined with cbind().
 
 Lastly combined traing data and test data are attached together by adding combined test data after combined training data row by row. 
 
-2. Execute Step 2 of assignment: "Extracts only the measurements on the mean and standard deviation for each measurement". 
+* Execute Step 2 of assignment: "Extracts only the measurements on the mean and standard deviation for each measurement". 
 
 To be able to decide which feature measurements are mean or standard deviation type we need to have names for features. These are found in file UCI HAR Dataset/features.txt. This file contais 561 rows (one for each feature) and each row has two values: numeric column index referring a column in feature measurent file (UCI HAR Dataset/train/X_train.txt and UCI HAR Dataset/test/X_test.txt) and textual feature name matching to that column. 
 

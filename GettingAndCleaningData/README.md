@@ -100,7 +100,7 @@ We have 30 subjects and 6 activities so we end up by having 180 different combin
 
 We still need to tackle principle 1. We have in our data frame now columns "activityname" and "activityid" which are connected to the same underlying variable (activity). We get rid of "activityid" column since we want to keep the one that contains descriptive names.
 
-Resulting tidy data set size is 180 rows x 68 colums.
+Resulting tidy data set size is 180 rows x 68 columns.
 
 As a last action we still modify column names for features so that they contain information that instead of features in data frame in step 4 columns now contain mean of feature vector. This is accomplished by addina a strin "meanof" in the beginning of each of the 66 feature vectors mean value column.
 

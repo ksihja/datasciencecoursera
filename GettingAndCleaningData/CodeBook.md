@@ -123,7 +123,11 @@ Based on the information provided in these 2 files there are following parts fro
 
 * "t" or "f" in the beginning of feature name. This means whether measurement is made on timedomain or frequencydomain (for more about these domains see [Fourier transformation](https://en.wikipedia.org/wiki/Fourier_transform)). These abbreviations will be transformed during processing so that "t" is converted into "timedomain" and "f" into "frequencydomain" in feature names
 * "Acc" means that feature measurement originates smart phones accelerometer and "Gyro" that it originates from phone's gyroscope. These are not converted into feature names during processing.
-* "Mag" 
+* "Mag" means magnitude and it is not converted during processing 
+* "Body" means effects of body movements in accelometers recordings during person's activities. It is not further converted during processing
+* "Gravity" means effect of gravity in accelometers recordings during person's activities. It is not further converted during processing
+
+Desicion which feature name components were converted during processing was based mainly by names readibility by human. Converting everythin into the longer names would produce extremely long column names and while those poses no problems for automatic R processing I felt that for human eyes choices made were a decent ones.
 
 Short description of what the variable describes.
 

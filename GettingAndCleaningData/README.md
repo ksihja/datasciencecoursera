@@ -29,7 +29,7 @@ Processing steps in run_analysis() script itself contains more detailed informat
 * Step 1 ("Merges the training and the test sets to create one data set"): 
 
 Read all files that are needed for this step.  
-Files needed areUCI HAR Dataset/train/X_train.txt,  UCI HAR Dataset/train/y_train.txt,  UCI HAR Dataset/train/subject_train.txt,  UCI HAR Dataset/test/X_test.txt,  UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt. 
+Files needed are UCI HAR Dataset/train/X_train.txt,  UCI HAR Dataset/train/y_train.txt,  UCI HAR Dataset/train/subject_train.txt,  UCI HAR Dataset/test/X_test.txt,  UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt. 
 
 Training files containing subject ids, activity ids and measures of feature vectors are then combined into one data.frame. Every training data file has 7352 rows so these can be attached together with cbind(). 
 

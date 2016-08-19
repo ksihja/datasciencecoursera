@@ -58,6 +58,8 @@ When feature names are read into data frame we are using grep and regular expres
 
 After calculating indexes for requested features we create new data frame subsetting the data frame created in Step 1 with calculated index positions of requested features.
 
+As a result we get data frame with 10299 rows and 68 columns. Columns are like: "subjectid", "activityid" followed by 66 filtered feature columns without programmatically defined name.
+
 * Step 3 ("Uses descriptive activity names to name the activities in the data set"):
 
 Activity labels are first read into R from UCI HAR Dataset/activity_labels.txt.  

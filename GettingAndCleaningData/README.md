@@ -18,7 +18,7 @@ For definition of what tidy data is see [Hadley Wickham's "Tidy Data" article](h
 
 Processing steps in run_analysis(), scrip itself contains more detailed information connected to each of the steps below:
 
-1. Download [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) (HARUS for short later in text).
-2. Read in the R all files that are needed for Step 1 of assignment: "Merges the training and the test sets to create one data set" (UCI HAR Dataset//train/X_train.txt, train/y_train.txt, train/subject_train.txt, /test/X_test.txt, test/y_test.txt, test/subject_test.txt )
+0. Download [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) (HARUS for short later in text).
+1. Read all files that are needed for Step 1 of assignment: "Merges the training and the test sets to create one data set" . Needed files in this step are UCI HAR Dataset/train/X_train.txt,  UCI HAR Dataset/train/y_train.txt,  UCI HAR Dataset/train/subject_train.txt,  UCI HAR Dataset/test/X_test.txt,  UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt. Training files containing subject ids, activity ids and measuresof  featurevectors are then combined into one data.frame. Every training data file has 7352 rows so these can be attached together with cbind(). Files in test set has 2947 rows so these are also combined with cbind(). Lastly combined traing data and test data are attached together by adding combined test data after combine training data row by row. 
 
 __README.md__ (this file): Overview of all files in this directory

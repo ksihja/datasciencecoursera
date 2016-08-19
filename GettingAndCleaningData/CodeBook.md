@@ -14,12 +14,12 @@ More detailed explanation of files and processing steps made during this project
 
 For the scope of this project raw data means [HARUS data set zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
-Raw data was collected as a part of R-processing 
+Raw data was collected as a part of R-processing downloading it into R. 
 
 ###Notes on the original (raw) data 
-Some additional notes (if avaialble, otherwise you can leave this section out).
+HARUS data contains more detailed description of [its goals](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#). 
 
-NO NA's found this was checked by all(colSums(is.na(x))==0)
+Before starting actual processing raw data was checked against possible NA values in data. Since none was found there is no need to have any NA handling in actual R processing.
 
 ##Creating the tidy datafile
 

@@ -90,7 +90,7 @@ str:
 [64] "meanoffBodyBodyAccJerkMagstd"   "meanoffBodyBodyGyroMagmean"     "meanoffBodyBodyGyroMagstd"     
 [67] "meanoffBodyBodyGyroJerkMagmean" "meanoffBodyBodyGyroJerkMagstd" 
 
-###Variable 1 (repeat this section for all variables in the dataset)
+###subjectid 
 Short description of what the variable describes.
 
 Some information on the variable including:

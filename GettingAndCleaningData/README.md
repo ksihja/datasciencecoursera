@@ -90,7 +90,7 @@ Processing in this step is closely connected to [Tidy data article](http://vita.
 2. Each observation forms a row
 3. Each type of observational unit forms a table
 
-For principle 3. we don't neeed to do anything. We already have one data frame containing observations of only one type: calculated feature vectors per subject and activity.
+For principle 3. we don't need to do anything. We already have one data frame containing observations of only one type: calculated feature vectors per subject and activity.
 
 For principle 2. We are observing (calculating) means values for feature vectors for each combination of subject and activity. Subject and activity are specified by columns subjectid and activityname. When we first split our data set based on these two variables to obtain all combination of these 2 variables and then calculate mean values of all features over specific (subjectid, activityname)  combination we reach the tidy data goal by having one observation per row. 
 

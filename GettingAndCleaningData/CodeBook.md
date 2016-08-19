@@ -116,12 +116,32 @@ Some information on the variable including:
 
 (you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
+###Details of features naming convention
+
+HARUS data contains files "features_info.txt" and "READ_ME.txt" under data set zip file's root directory "UCI HAR Dataset". To check these files you need to get  [HARUS data set zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and unzip it to check these files. These files are not used (that is read into R) during R processing since they are meta information and so you need to explicitly unzip the data set zip file to glance those.  
+Based on the information provided in these 2 files there are following parts from which the feature name is composed of :
+
+* "t" or "f" in the beginning of feature name. This means whether measuremnt is made on timedomain or frequencydomain (for more about these domains see [FFourier transformation](https://en.wikipedia.org/wiki/Fourier_transform). These abbreviations will be transformed during processing so that "t" is converted into "timedomain" and "f" into "frequencydomain" in feature names
+* "Acc" means that feature measurement originates smart phones accelerometer and "Gyro" that it originates from phone's gyroscope. These are not converted into feature names during processing.
+* "Mag" 
+
+Short description of what the variable describes.
+
+Some information on the variable including:
+ - Class of the variable
+ - Unique values/levels of the variable
+ - Unit of measurement (if no unit of measurement list this as well)
+ - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
+
+(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+
 ####Notes on variable 1:
 If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
 
 ##Sources
 
 This CodeBook is based on the template from [Joris Schut](https://gist.github.com/JorisSchut/dbc1fc0402f28cad9b41)
+
 
 ##Annex
 If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)

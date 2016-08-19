@@ -121,7 +121,7 @@ Some information on the variable including:
 HARUS data contains files "features_info.txt" and "READ_ME.txt" under data set zip file's root directory "UCI HAR Dataset". To check these files you need to get  [HARUS data set zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and unzip it to check these files. These files are not used (that is read into R) during R processing since they are meta information and so you need to explicitly unzip the data set zip file to glance those.  
 Based on the information provided in these 2 files there are following parts from which the feature name is composed of :
 
-* "t" or "f" in the beginning of feature name. This means whether measurement is made on timedomain or frequencydomain (for more about these domains see [Fourier transformation](https://en.wikipedia.org/wiki/Fourier_transform). These abbreviations will be transformed during processing so that "t" is converted into "timedomain" and "f" into "frequencydomain" in feature names
+* "t" or "f" in the beginning of feature name. This means whether measurement is made on timedomain or frequencydomain (for more about these domains see [Fourier transformation](https://en.wikipedia.org/wiki/Fourier_transform)). These abbreviations will be transformed during processing so that "t" is converted into "timedomain" and "f" into "frequencydomain" in feature names
 * "Acc" means that feature measurement originates smart phones accelerometer and "Gyro" that it originates from phone's gyroscope. These are not converted into feature names during processing.
 * "Mag" 
 

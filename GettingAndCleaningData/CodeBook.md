@@ -37,7 +37,8 @@ For more details see
 [README](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/README.md).
 
 ###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
+
+There were no need for NA value handling since none were found. Cleaning of the data thus contained only filtering out unneeded portions of raw data. [README](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/README.md) contains detailed explanation explaining which parts ofr the data was discarded, in which phase of processing and why.
 
 ##Description of the variables in the tiny_data.txt file
 General description of the file including:

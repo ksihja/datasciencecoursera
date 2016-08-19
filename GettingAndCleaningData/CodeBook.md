@@ -52,7 +52,7 @@ If available, some additional notes on the variable not covered elsewehere. If n
 
 ##Sources
 
-This CodeBook is based on the template from [Jori Schut](https://gist.github.com/JorisSchut/dbc1fc0402f28cad9b41)
+This CodeBook is based on the template from [Joris Schut](https://gist.github.com/JorisSchut/dbc1fc0402f28cad9b41)
 
 ##Annex
 If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)

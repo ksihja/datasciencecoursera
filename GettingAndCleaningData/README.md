@@ -33,7 +33,9 @@ Read all files that are needed for this step.
 Files needed are UCI HAR Dataset/train/X_train.txt,  UCI HAR Dataset/train/y_train.txt,  UCI HAR Dataset/train/subject_train.txt,  UCI HAR Dataset/test/X_test.txt,  UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt. During reading of training files colums are named as below:
 
 subject_train.txt -> data read into column "subjectid"
+
 y_train.txt -> data read into colum "activityid"
+
 X_train.txt -> data read as fixed width file but no colums are named during reading.
 
 Similar column naming is used also files in test set.

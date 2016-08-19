@@ -42,9 +42,9 @@ There were no need for NA value handling since none were found. Cleaning of the 
 
 ##Description of the variables in the tidyDataSet.txt file
  
- **NOTE**: *For checking tidy data set characteristic's with R commands given below you need to download [tidy data set](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/tidyDataSet.txt) into your local disc in R's working directory.*
+ **NOTE**: *For checking tidy data set characteristic's with R commands given below you need to download [tidy data set](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/tidyDataSet.txt) into your local disc in R's working directory and issue following command `> tData <- read.table("tidyDataSet.txt")`*
  
- - Dimensions of the resulted tidy dat set was 180 rows x 68 colums. 180 represents number of observations (30 persons doing 6 different activities). First column is "subjectid", second is "activityname" and rest of the 66 columns are mean values of selected features over each observation.
+ - Dimensions of the resulted tidy dat set was 180 rows x 68 colums. 180 represents number of observations (30 persons doing 6 different activities). First column is "subjectid", second is "activityname" and rest of the 66 columns are mean values of selected features over each observation. See dimensions by command `> dim(tData)tData`
  - Summary of the data
  - Variables present in the dataset
 

@@ -108,7 +108,7 @@ str:
 
 ###Variable subjectid 
 
-int type identifier for test person. Values of this variable are betwee [1,30].
+int type identifier for test person. Values of this variable are between [1,30].
 
 This variable has no unit.
 

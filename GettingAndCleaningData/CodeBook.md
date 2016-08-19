@@ -9,7 +9,8 @@ From this filtered set of measurement mean value of each measurement is then cal
 ##Study design and data processing
 
 ###Collection of the raw data
-Description of how the data was collected.
+
+For the scope of this project raw data means [HARUS data set zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ###Notes on the original (raw) data 
 Some additional notes (if avaialble, otherwise you can leave this section out).

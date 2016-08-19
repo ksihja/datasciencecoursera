@@ -30,7 +30,7 @@ Steps for creating tidy data set were based on the processing steps defined in a
 * raw data was downloaded into local disc
 * training and test data were combined together to form one data set containing all 30 person's data
 * Mean and standard deviation type of measurements (features) were selected from 561 original measurements
-* New tidy data set was formed from combined data. Tidy data sets observation were 180 possible combinations of test person (a.k.a subject) and activity he/she was doing. Mean value of each of the filtered features was then calculated per each (subject,activity) combination
+* New tidy data set was formed from combined data. Tidy data set's observation were 180 possible combinations of test person (a.k.a subject) and activity he/she was doing. Mean value of each of the filtered features was then calculated per each (subject,activity) combination
 * AS a result was a tidy data set with 180 rows and 68 colums was created.
 
 For more details see 

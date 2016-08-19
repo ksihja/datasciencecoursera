@@ -76,11 +76,15 @@ Data frame still have no descriptive names for 66 feature colums.
 
 We reuse first feature names that we read into R in step 2. We filter feature names using same regular expression than in step 2 but now we instruct grep to return feature names instead of index (that was used in step 2).
 
-After receiving vector of names for filtered features we beautify these names a little further. All '-', '(' and ')' characters are removed from feature names to make them contain only alphabetical characters. Capital letters are not removed from feature names since they are more readable for human eys with capital letters left even though further R-processing is easier with lower case letters only. Conversion to lower case is trivial with tolower() function if needed.
+After receiving vector of names for filtered features we beautify these names a little further. All '-', '(' and ')' characters are removed from feature names to make them contain only alphabetical characters. Capital letters are not removed from feature names since they are quit long names already and more readable for human eys with capital letters left even though further R-processing is easier with lower case letters only. Conversion to lower case is trivial with tolower() function if needed.
+
+Next "t" into beginning of feature name is replaced with string "timedomain" and "f" in the beginning with string "frequencydomain". This modification is made so that feature names "tBodyAccmeanX" and "fBodyAccmeanX" (which are after modification "timedomainBodyAccmeanX" and "frequencydomainBodyAccmeanX") are more distinguished. Further "t" or "f" is pretty meaningless without explanation. 
+
+Basically you could still modify feature names more (convert "Acc" to "Accelometer", "Mag" to "Magnitude" etc.) but I feel that opening all abbreviations from feature names is an overkill since it leads so long names that they are almost unreadable. See [CodeBook](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/CodeBook.md) for more detailed explanations concerning different abbreviations within feature names and their meaning.
 
 As a last step modified feature names are inserted into data frames names()  after first 3 columns.
 
-As a result we get data frame with 10299 rows and 69 columns. Columns are like: "subjectid", "activityname", "activityid" followed by 66 filtered feature columns where naming is now descriptive (i.e feature column with name "V1" is changed to "tBodyAccmeanX" and so on).
+As a result we get data frame with 10299 rows and 69 columns. Columns are like: "subjectid", "activityname", "activityid" followed by 66 filtered feature columns where naming is now descriptive (i.e feature column with name "V1" is changed to "ttimedomainBodyAccmeanX" and so on).
 
 * Step 5 ("From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject):
 
@@ -106,7 +110,7 @@ As a last action we still modify column names for features so that they contain 
 
 Finally we remove temporary file containig HARUS data set zip file from local disk and write resulting tidy data set with name "tidyDataSet.txt" into R's working directory.
 
-So our final tidy data set has 180 rows (number of observations) and 68 colums named: "subjectid", "activityname" and 66 descriptive feature vector names ("meanoftBodyAccmeanX", "meanoftBodyAccmeanY" ... ). 
+So our final tidy data set has 180 rows (number of observations) and 68 colums named: "subjectid", "activityname" and 66 descriptive feature vector names ("meanoftimedomainBodyAccmeanX", "meanoftimedomainBodyAccmeanY" ... ). 
 
 To check all column names issue command `> names(tData)`
 

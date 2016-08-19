@@ -108,7 +108,7 @@ Finally we remove temporary file containig HARUS data set zip file from local di
 
 So our final tidy data set has 180 rows (number of observations) and 68 colums named: "subjectid", "activityname" and 66 descriptive feature vector names ("meanoftBodyAccmeanX", "meanoftBodyAccmeanY" ... ). 
 
-To check all column names issue command `> names(tData)`.
+To check all column names issue command `> names(tData)`
 
 ##README.md
 (this file): Overview of all files in this directory

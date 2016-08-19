@@ -194,6 +194,3 @@ Following sources are used during this project:
 * HARUS features_info.txt can be found under UCI HAR Dataset directory HARUS data set zip file
 * [Hadley Wickham's "Tidy Data" article](http://vita.had.co.nz/papers/tidy-data.pdf).
 * [David Hood for his instructions for "Getting and Cleaning Data Course"](https://thoughtfulbloke.wordpress.com/2015/09/09/)
-
-##Annex
-If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)

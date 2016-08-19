@@ -102,7 +102,7 @@ We still need to tackle principle 1. We have in our data frame now columns "acti
 
 Resulting tidy data set size is 180 rows x 68 columns.
 
-As a last action we still modify column names for features so that they contain information that instead of features in data frame in step 4 columns now contain mean of feature vector. This is accomplished by addina a strin "meanof" in the beginning of each of the 66 feature vectors mean value column.
+As a last action we still modify column names for features so that they contain information that instead of features in data frame in step 4 columns now contain mean of feature vector. This is accomplished by adding a string "meanof" in the beginning of each of the 66 feature vector's mean value column.
 
 180 is the number of observations as explained above and colums are  "subjectid" and "activityname" and 66 descriptive feature vector names (  meanoftBodyAccmeanX, meanoftBodyAccmeanY ... ). 
 

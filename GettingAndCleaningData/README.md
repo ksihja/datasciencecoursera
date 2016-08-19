@@ -29,13 +29,22 @@ Processing steps in run_analysis() script itself contains more detailed informat
 * Step 1 ("Merges the training and the test sets to create one data set"): 
 
 Read all files that are needed for this step.  
-Files needed are UCI HAR Dataset/train/X_train.txt,  UCI HAR Dataset/train/y_train.txt,  UCI HAR Dataset/train/subject_train.txt,  UCI HAR Dataset/test/X_test.txt,  UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt. 
 
-Training files containing subject ids, activity ids and measures of feature vectors are then combined into one data.frame. Every training data file has 7352 rows so these can be attached together with cbind(). 
+Files needed are UCI HAR Dataset/train/X_train.txt,  UCI HAR Dataset/train/y_train.txt,  UCI HAR Dataset/train/subject_train.txt,  UCI HAR Dataset/test/X_test.txt,  UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt. During reading of training files colums are named as below:
 
-Files in test set has 2947 rows so these are also combined with cbind(). 
+subject_train.txt -> data read into column "subjectid"
+y_train.txt -> data read into colum "activityid"
+X_train.txt -> data read as fixed width file but no colums are named during reading.
 
-Lastly combined training data and test data are attached together by adding combined test data after combined training data row by row (using rbind() ).
+Similar column naming is used also files in test set.
+
+Training files containing subject ids (column name "subjectid"), activity ids ("activityid") and measures of feature vectors are then combined into one data.frame. Every training data file has 7352 rows so these can be attached together with cbind(). 
+
+AS a result we get a data frame with 7352 rows and 563 columns. Columns are like: "subjectid", "activityid" followed by 561 feature columns.
+
+Files in test set has 2947 rows so these are also combined with cbind(). Columns are similar than in combined training set.
+
+Lastly combined training data and test data are attached together by adding combined test data after combined training data row by row (using rbind() ). As a result we get data frame with 10299 rows and  563 columns.
 
 * Step 2 ("Extracts only the measurements on the mean and standard deviation for each measurement"): 
 
@@ -46,6 +55,12 @@ When feature names are read into data.frame we are using grep and regular expres
 **NOTE** *Additional vectors (see UCI HAR Dataset/features_info.txt for gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean and tBodyGyroJerkMean) are intentionally left out (regular expression discards these since they dont have '()' after feature name). Decision to leave these vectors out is based on interpretation of information in features_info.txt and features.txt where it can be seen that these additional vectors are present only in last 7 features as a parameter for angle() feature. They are thus not measurements __but parameters of measurement__. Similarly features having meanFreq() in their name is also left out since features_info.txt clearly gives this feature different meaning than plain mean() value calculation.*
 
 After calculating indexes for requested features we create new data frame subsetting the data frame created in Step 1 with calculated index positions of requested features.
+
+* Step 3 ("Uses descriptive activity names to name the activities in the data set"):
+
+Activity labels are first read into R from UCI HAR Dataset/activity_labels.txt.  
+
+Data frame created in step 2 is then mutated by adding new column "activityname" as a last column in data frame.Value for activity can be deduced by matching  
 
 ##README.md
 (this file): Overview of all files in this directory

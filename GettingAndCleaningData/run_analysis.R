@@ -14,6 +14,7 @@ run_analysis <- function(){
     tempFileForDataSet <- tempfile()
     download.file(humanActivityDataSetUrl,tempFileForDataSet)
     
+    
     rootDirectoryInZipFile = "UCI HAR Dataset/"
     
     # ###########################################################################################
@@ -161,6 +162,10 @@ run_analysis <- function(){
     descriptiveFeatureNames <- gsub("\\(", "", descriptiveFeatureNames)
     descriptiveFeatureNames <- gsub("\\)", "", descriptiveFeatureNames)
     
+    # Replace t in the beginning with timedomain and f with frequencydomain
+    descriptiveFeatureNames <- sub("^t", "timedomain", descriptiveFeatureNames)
+    descriptiveFeatureNames <- sub("^f", "frequencydomain", descriptiveFeatureNames)
+    
     # Create descriptive names for data set. 
     # Names are created as below:
     # columns 1 and 3: reuse existing names
@@ -193,7 +198,7 @@ run_analysis <- function(){
    
     # TD_2. Each observation forms a row:
     #
-    # We are observing (calculating) means values for feature vectors for each combination
+    # We are observing (calculating) mean values for feature vectors for each combination
     # of subject and activity. Subject and activity are specified by columns subjectid and activityname.
     #
     # When we first split our data set based on these two variables to obtain all combination of these 2
@@ -248,8 +253,4 @@ run_analysis <- function(){
     # Save dataset into local disk under working directory
     
     write.table(tidyDataSet, file="./tidyDataSet.txt")
-    
-    # Return tidy data set
-    
-    tidyDataSet
 }

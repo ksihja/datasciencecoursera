@@ -92,11 +92,17 @@ Processing in this step is closely connected to [Tidy data article](http://vita.
 
 For principle 3. we don't need to do anything. We already have one data frame containing observations of only one type: calculated feature vectors per subject and activity.
 
-For principle 2. We are observing (calculating) mean values for feature vectors for each combination of subject and activity. Subject and activity are specified by columns subjectid and activityname. When we first split our data set based on these two variables to obtain all combination of these 2 variables and then calculate mean values of all features over specific (subjectid, activityname)  combination we reach the tidy data goal by having one observation per row. 
+For principle 2. We are observing (calculating) mean values for feature vectors for each combination of subject and activity. Subject and activity are specified by columns "subjectid" and "activityname". When we first split (or group) our data set based on these two variables to obtain all combination of these 2 variables and then calculate mean values of all 66 features over specific (subjectid, activityname)  combination we reach the tidy data goal by having one observation per row. 
 
-This observation is of form: subjectid, activityname and 66 columns containing mean value for each feature vector  per this (subjectid, activity) combination. Mean value for activityid column is also calculated but that column is not part of tidy data and is removed in later phase (see below).
+This observation is of form: subjectid, activityname and 66 columns containing mean value for each feature vector per this (subjectid, activityname) combination. Mean value for activityid column (column 3) is also calculated but that column is not part of tidy data and is removed in later phase (see below).
 
-Resulting data set size is 180 rows x 69 colums.
+We have 30 subjects and 6 activities so we end up by having 180 different combination of (subjectid, activityname) combinations. These will define the number of rows (observations) in our tidy data set.
+
+We still need to tackle principle 1. We have in our data frame now columns "activityname" and "activityid" which are connected to the same underlying variable (activity). We get rid of "activityid" column since we want to keep the one that contains descriptive namers.
+
+Resulting tidy data set size is 180 rows x 68 colums.
+
+180 is the number of observations as explained above and colums are  "subjectid" and "activityname" and 66 descriptive feature vector names (  meanoftBodyAccmeanX, meanoftBodyAccmeanY ... ). To check all column names issue command `> names(tData)`.
 
 ##README.md
 (this file): Overview of all files in this directory

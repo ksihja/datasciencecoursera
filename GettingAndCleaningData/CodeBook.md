@@ -148,7 +148,7 @@ There are following common characteristics with all feature variables
 
 ###Variable names for feature variables
 
-Feature variables occupy columns [3:68] in tidy dataset. To get names of all feature vaqriables issue command `> names(tData)[3:68]`
+Feature variables occupy columns [3:68] in tidy dataset. To get names of all feature variables issue command `> names(tData)[3:68]`
 
 [1] "meanoftimedomainBodyAccmeanX"                 "meanoftimedomainBodyAccmeanY"                
  [3] "meanoftimedomainBodyAccmeanZ"                 "meanoftimedomainBodyAccstdX"                 
@@ -184,27 +184,16 @@ Feature variables occupy columns [3:68] in tidy dataset. To get names of all fea
 [63] "meanoffrequencydomainBodyBodyGyroMagmean"     "meanoffrequencydomainBodyBodyGyroMagstd"     
 [65] "meanoffrequencydomainBodyBodyGyroJerkMagmean" "meanoffrequencydomainBodyBodyGyroJerkMagstd" 
 
-
-Short description of what the variable describes.
-
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
-
 ##Sources
+
+Following sources are used during this project:
 
 * This CodeBook is based on the template from [Joris Schut](https://gist.github.com/JorisSchut/dbc1fc0402f28cad9b41)
 * [HARUS data set zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 * HARUS README.txt can be found under UCI HAR Dataset directory HARUS data set zip file
 * HARUS features_info.txt can be found under UCI HAR Dataset directory HARUS data set zip file
 * [Hadley Wickham's "Tidy Data" article](http://vita.had.co.nz/papers/tidy-data.pdf).
+* [David Hood for his instructions for "Getting and Cleaning Data Course"](https://thoughtfulbloke.wordpress.com/2015/09/09/)
 
 ##Annex
 If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)

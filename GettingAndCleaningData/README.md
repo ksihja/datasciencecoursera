@@ -18,7 +18,7 @@ Code book explaining study design, creation steps for tidy data and description 
 R script used for getting and processing data. 
 Analysis script is executed without any parameters ( `> run_analysis()` ) and it produces a tidy data set in the R working directory. 
 
-**NOTE** *run_analysis.R follows steps that are defined in assignment exactly. For example in step 2 it would have been very simple process to name selected feature vectors with descriptive names but this was not done in this step since assignment requests this operation to be made in Step 4.*
+**NOTE** __*run_analysis.R follows steps that are defined in assignment exactly. For example in step 2 it would have been very simple process to name selected feature vectors with descriptive names but this was not done in this step since assignment requests this operation to be made in Step 4.*__
 
 For definition of what tidy data is see [Hadley Wickham's "Tidy Data" article](http://vita.had.co.nz/papers/tidy-data.pdf).  
 

@@ -50,7 +50,7 @@ Lastly combined training data and test data are attached together by adding comb
 
 * Step 2 ("Extracts only the measurements on the mean and standard deviation for each measurement"): 
 
-To be able to decide which feature measurements are mean or standard deviation type we need to have names for features. These are found in file UCI HAR Dataset/features.txt. This file contais 561 rows (one for each feature) and each row has two values: numeric column index referring a column in feature measurent file (UCI HAR Dataset/train/X_train.txt and UCI HAR Dataset/test/X_test.txt) and textual feature name matching to that column. 
+To be able to decide which feature measurements are mean or standard deviation type we need to have names for features. These are found in file UCI HAR Dataset/features.txt. This file contais 561 rows (one for each feature) and each row has two values: numeric column index referring a column in feature measurent file (UCI HAR Dataset/train/X_train.txt and UCI HAR Dataset/test/X_test.txt) and textual feature name matching to that column. During reading these 2 colums are named as "featureid" and "featurename".
 
 When feature names are read into data.frame we are using grep and regular expression to find out all feature names containing string 'std()' or 'mean()' somewhere in the feature name. Set of feature names found with this logic is measurements that is requested in step 2. Grep command returns indexes of features whose name matches to regular expression filter. 
 

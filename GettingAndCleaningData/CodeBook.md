@@ -45,11 +45,31 @@ There were no need for NA value handling since none were found. Cleaning of the 
  **NOTE**: *For checking tidy data set characteristic's with R commands given below you need to download [tidy data set](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/tidyDataSet.txt) into your local disc in R's working directory and issue following command `> tData <- read.table("tidyDataSet.txt")`*
  
  - Dimensions of the resulted tidy dat set was 180 rows x 68 colums. 180 represents number of observations (30 persons doing 6 different activities). First column is "subjectid", second is "activityname" and rest of the 66 columns are mean values of selected features over each observation. See dimensions by command `> dim(tData)tData`
- - Summary of the data
- - Variables present in the dataset
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
+ - For summarizing the data use commands `> head(tData)` and `>str(tData)`
+ - Names of the variables in data set can be seen by issuing command `> names(tData)`
+[1] "subjectid"                      "activityname"                   "meanoftBodyAccmeanX"           
+ [4] "meanoftBodyAccmeanY"            "meanoftBodyAccmeanZ"            "meanoftBodyAccstdX"            
+ [7] "meanoftBodyAccstdY"             "meanoftBodyAccstdZ"             "meanoftGravityAccmeanX"        
+[10] "meanoftGravityAccmeanY"         "meanoftGravityAccmeanZ"         "meanoftGravityAccstdX"         
+[13] "meanoftGravityAccstdY"          "meanoftGravityAccstdZ"          "meanoftBodyAccJerkmeanX"       
+[16] "meanoftBodyAccJerkmeanY"        "meanoftBodyAccJerkmeanZ"        "meanoftBodyAccJerkstdX"        
+[19] "meanoftBodyAccJerkstdY"         "meanoftBodyAccJerkstdZ"         "meanoftBodyGyromeanX"          
+[22] "meanoftBodyGyromeanY"           "meanoftBodyGyromeanZ"           "meanoftBodyGyrostdX"           
+[25] "meanoftBodyGyrostdY"            "meanoftBodyGyrostdZ"            "meanoftBodyGyroJerkmeanX"      
+[28] "meanoftBodyGyroJerkmeanY"       "meanoftBodyGyroJerkmeanZ"       "meanoftBodyGyroJerkstdX"       
+[31] "meanoftBodyGyroJerkstdY"        "meanoftBodyGyroJerkstdZ"        "meanoftBodyAccMagmean"         
+[34] "meanoftBodyAccMagstd"           "meanoftGravityAccMagmean"       "meanoftGravityAccMagstd"       
+[37] "meanoftBodyAccJerkMagmean"      "meanoftBodyAccJerkMagstd"       "meanoftBodyGyroMagmean"        
+[40] "meanoftBodyGyroMagstd"          "meanoftBodyGyroJerkMagmean"     "meanoftBodyGyroJerkMagstd"     
+[43] "meanoffBodyAccmeanX"            "meanoffBodyAccmeanY"            "meanoffBodyAccmeanZ"           
+[46] "meanoffBodyAccstdX"             "meanoffBodyAccstdY"             "meanoffBodyAccstdZ"            
+[49] "meanoffBodyAccJerkmeanX"        "meanoffBodyAccJerkmeanY"        "meanoffBodyAccJerkmeanZ"       
+[52] "meanoffBodyAccJerkstdX"         "meanoffBodyAccJerkstdY"         "meanoffBodyAccJerkstdZ"        
+[55] "meanoffBodyGyromeanX"           "meanoffBodyGyromeanY"           "meanoffBodyGyromeanZ"          
+[58] "meanoffBodyGyrostdX"            "meanoffBodyGyrostdY"            "meanoffBodyGyrostdZ"           
+[61] "meanoffBodyAccMagmean"          "meanoffBodyAccMagstd"           "meanoffBodyBodyAccJerkMagmean" 
+[64] "meanoffBodyBodyAccJerkMagstd"   "meanoffBodyBodyGyroMagmean"     "meanoffBodyBodyGyroMagstd"     
+[67] "meanoffBodyBodyGyroJerkMagmean" "meanoffBodyBodyGyroJerkMagstd" 
 ###Variable 1 (repeat this section for all variables in the dataset)
 Short description of what the variable describes.
 

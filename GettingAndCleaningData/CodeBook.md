@@ -136,7 +136,7 @@ Based on the information provided in these 2 files there are following parts fro
 * "Body" means effects of body movements in accelometers recordings during person's activities. It is not further converted during processing
 * "Gravity" means effect of gravity in accelometers recordings during person's activities. It is not further converted during processing
 
-Desicion which feature name components were converted during processing was based mainly by names readibility by human. Converting everythin into the longer names would produce extremely long column names and while those poses no problems for automatic R processing I felt that for human eyes choices made were a decent ones.
+Desicion which feature name components were converted during processing was based mainly by names readibility by human. Converting everything into the longer names would produce extremely long column names and while those poses no problems for automatic R processing I felt that for human eyes choices made were a decent ones.
 
 ###Common characteristics of feature variables (colums 3 to 68)
 

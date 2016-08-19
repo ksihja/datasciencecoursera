@@ -164,6 +164,7 @@ If available, some additional notes on the variable not covered elsewehere. If n
 * [HARUS data set zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 * HARUS README.txt can be found under UCI HAR Dataset directory HARUS data set zip file
 * HARUS features_info.txt can be found under UCI HAR Dataset directory HARUS data set zip file
+* [Hadley Wickham's "Tidy Data" article](http://vita.had.co.nz/papers/tidy-data.pdf).
 
 ##Annex
 If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)

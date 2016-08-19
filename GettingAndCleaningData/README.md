@@ -11,9 +11,11 @@ Tidy data set that is the outcome of assignment. For browsing produced data set 
 `> tData <- read.table("tidyDataSet")`
 * check data visually using for example View: `> View(tidyDataSet)`
 
-**CodeBook.md**: Code book explaining study design, creation steps for tidy data and description of variables in final tidy data set.
+##CodeBook.md
+Code book explaining study design, creation steps for tidy data and description of variables in final tidy data set.
 
-**run_analysis.R**: R script used for getting and processing data. Analysis script is executed without any parameters ( `> run_analysis()` ) and it produces a tidy data set in the R working directory.  **NOTE** run_analysis.R follows steps that are defined in assignment exactly. For example in step 2 it would have been very simple process to name selected feature vectors with descriptive names but this was not done in this step since assignment requests this operation to be made in Step 4.
+##run_analysis.R 
+R script used for getting and processing data. Analysis script is executed without any parameters ( `> run_analysis()` ) and it produces a tidy data set in the R working directory.  **NOTE** run_analysis.R follows steps that are defined in assignment exactly. For example in step 2 it would have been very simple process to name selected feature vectors with descriptive names but this was not done in this step since assignment requests this operation to be made in Step 4.
 
 For definition of what tidy data is see [Hadley Wickham's "Tidy Data" article](http://vita.had.co.nz/papers/tidy-data.pdf).  
 
@@ -41,6 +43,5 @@ When feature names are read into data.frame we are using grep and regular expres
 
 After calculating indexes for requested features we create new data frame subsetting the data frame created in Step 1 with calculated index positions of requested features.
 
-
-
-**README.md** (this file): Overview of all files in this directory
+##README.md
+(this file): Overview of all files in this directory

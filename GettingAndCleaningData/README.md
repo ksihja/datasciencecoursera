@@ -35,7 +35,7 @@ Training files containing subject ids, activity ids and measures of feature vect
 
 Files in test set has 2947 rows so these are also combined with cbind(). 
 
-Lastly combined traing data and test data are attached together by adding combined test data after combined training data row by row. 
+Lastly combined training data and test data are attached together by adding combined test data after combined training data row by row (using rbind() ).
 
 * Step 2 ("Extracts only the measurements on the mean and standard deviation for each measurement"): 
 

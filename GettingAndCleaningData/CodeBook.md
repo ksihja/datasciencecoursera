@@ -6,13 +6,15 @@ Tidy data set should contain mean value observations of sub set of measurements 
 
 From this filtered set of measurement mean value of each measurement is then calculated per observation. Observation is a combination of person and an activity he/she is performing.
 
+More detailed explanation of files and processing steps made during this project can be found from [README](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/README.md).
+
 ##Study design and data processing
 
 ###Collection of the raw data
 
 For the scope of this project raw data means [HARUS data set zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
-Raw data was collected as a part of R-processing (for more see [README}(https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/README.md).
+Raw data was collected as a part of R-processing 
 
 ###Notes on the original (raw) data 
 Some additional notes (if avaialble, otherwise you can leave this section out).

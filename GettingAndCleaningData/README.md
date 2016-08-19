@@ -83,7 +83,13 @@ As a last step modified feature names are inserted into data frames names()  aft
 As a result we get data frame with 10299 rows and 69 columns. Columns are like: "subjectid", "activityname", "activityid" followed by 66 filtered feature columns where naming is now descriptive (i.e feature column with name "V1" is changed to "tBodyAccmeanX" and so on).
 
 * Step 5 ("From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject):
-* 
+
+Processing in this step is closely connected to [Tidy data article](http://vita.had.co.nz/papers/tidy-data.pdf) mentioned already earlier. In a nutshell tidy data principles are as below:
+
+1. Each variable forms a column
+2. Each observation forms a row
+3. Each type of observational unit forms a table
+
 
 
 ##README.md

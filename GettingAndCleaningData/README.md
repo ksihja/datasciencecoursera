@@ -22,7 +22,7 @@ Analysis script is executed without any parameters ( `> run_analysis()` ) and it
 
 For definition of what tidy data is see [Hadley Wickham's "Tidy Data" article](http://vita.had.co.nz/papers/tidy-data.pdf).  
 
-Processing steps in run_analysis(), scrip itself contains more detailed information connected to each of the steps below:
+Processing steps in run_analysis() script itself contains more detailed information connected to each of the steps below:
 
 * Download [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) (HARUS for short later in text).
 

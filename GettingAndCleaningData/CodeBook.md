@@ -46,17 +46,6 @@ There were no need for NA value handling since none were found. Cleaning of the 
  
  - Dimensions of the resulted tidy dat set was 180 rows x 68 colums. 180 represents number of observations (30 persons doing 6 different activities). First column is "subjectid", second is "activityname" and rest of the 66 columns are mean values of selected features over each observation. See dimensions by command `> dim(tData)tData`
  - For summarizing the data use commands `> head(tData)` and `>str(tData)`
- 
-head:
-
-   subjectid       activityname meanoftBodyAccmeanX meanoftBodyAccmeanY meanoftBodyAccmeanZ meanoftBodyAccstdX meanoftBodyAccstdY
-   
-1         1             LAYING           0.2215982        -0.040513953          -0.1132036        -0.92805647       -0.836827406
-2         1            SITTING           0.2612376        -0.001308288          -0.1045442        -0.97722901       -0.922618642
-3         1           STANDING           0.2789176        -0.016137590          -0.1106018        -0.99575990       -0.973190056
-4         1            WALKING           0.2773308        -0.017383819          -0.1111481        -0.28374026        0.114461337
-5         1 WALKING_DOWNSTAIRS           0.2891883        -0.009918505          -0.1075662         0.03003534       -0.031935943
-6         1   WALKING_UPSTAIRS           0.2554617        -0.023953149          -0.0973020        -0.35470803       -0.002320265
 
 str:
 

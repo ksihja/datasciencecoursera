@@ -38,7 +38,7 @@ For more details see
 
 ###Cleaning of the data
 
-There were no need for NA value handling since none were found. Cleaning of the data thus contained only filtering out unneeded portions of raw data. [README](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/README.md) contains detailed explanation explaining which parts ofr the data was discarded, in which phase of processing and why.
+There were no need for NA value handling since none were found. Cleaning of the data thus contained only filtering out unneeded portions of raw data. [README](https://github.com/ksihja/datasciencecoursera/blob/master/GettingAndCleaningData/README.md) contains detailed explanation explaining which parts of the data was discarded, in which phase of processing and why.
 
 ##Description of the variables in the tidyDataSet.txt file
  

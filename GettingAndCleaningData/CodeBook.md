@@ -117,6 +117,8 @@ This variable has no unit.
 Factor type specifying different activities. This factor has 6 levels.
 This variable has no unit.
 
+Names of factors can be seen by issuing command
+
 `> unique(tData$activityname)`
 
 [1] LAYING             SITTING            STANDING           WALKING            WALKING_DOWNSTAIRS

@@ -22,9 +22,11 @@ Analysis script is executed without any parameters ( `> run_analysis()` ) and it
 
 For definition of what tidy data is see [Hadley Wickham's "Tidy Data" article](http://vita.had.co.nz/papers/tidy-data.pdf).  
 
+###Explanation of processing steps in run_analysis
+
 Processing steps in run_analysis() script itself contains more detailed information connected to each of the steps below:
 
-* First step in scrit is to download [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) (HARUS for short later in text). Downloading is made over http since that seems to work too and we can thus avoid some of the [problems specific for the computers OS] (http://rpubs.com/thoughtfulbloke/downloadtips).
+* First step in script is to download [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) (HARUS for short later in text). Downloading is made over http since that seems to work too and we can thus avoid some of the [problems specific for the computers OS] (http://rpubs.com/thoughtfulbloke/downloadtips).
 
 * Step 1 ("Merges the training and the test sets to create one data set"): 
 

@@ -25,7 +25,7 @@ Before starting actual processing raw data was checked against possible NA value
 
 ###Guide to create the tidy data file
 
-Steps for creating tidy data set were based on the processing steps defined in assigment. In a high level following steps were made to prepare tidy data set5:
+Steps for creating tidy data set were based on the processing steps defined in assigment. In a high level following steps were made to prepare tidy data set:
 
 * raw data was downloaded into local disc
 * training and test data were combined together to form one data set containing all 30 person's data

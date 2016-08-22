@@ -46,7 +46,7 @@ There were no need for NA value handling since none were found. Cleaning of the 
  
  - Dimensions of the resulted tidy dat set was 180 rows x 68 colums. 180 represents number of observations (30 persons doing 6 different activities). First column is "subjectid", second is "activityname" and rest of the 66 columns are mean values of selected features over each observation. See dimensions by command `> dim(tData)`
  - We use terminology "feature variables" below to refer 66 mean value features
- - For summarizing the data use commands `> head(tData)` and `>str(tData)`
+ - For summarizing the data use commands `> head(tData)` and `> str(tData)`
 
 str:
 

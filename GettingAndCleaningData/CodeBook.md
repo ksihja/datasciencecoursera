@@ -69,7 +69,7 @@ str:
  $ meanoftimedomainBodyAccstdZ                 : num  -0.826 -0.94 -0.98 -0.26 -0.23 ...
  
 
- - Names of the variables in data set can be seen by issuing command `> names(tData)`
+ - Names of the variables in data set are as below. Column 1 identifies subject (person making the activities), column 2 activity wuth it's name and last 66 columns from postion 3 to 68 are columns containing feature variables
  
 [1] "subjectid"                                    "activityname"                                
  [3] "meanoftimedomainBodyAccmeanX"                 "meanoftimedomainBodyAccmeanY"                
@@ -119,13 +119,9 @@ This variable has no unit.
 
 Names of activities can be seen by issuing command
 
-`> unique(tData$activityname)`
+`> unique(tData[2])`
 
-[1] LAYING             SITTING            STANDING           WALKING            WALKING_DOWNSTAIRS
-
-[6] WALKING_UPSTAIRS  
-
-Levels: LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS
+These levels are LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS and WALKING_UPSTAIRS
 
 ###Details of feature variables naming convention
 

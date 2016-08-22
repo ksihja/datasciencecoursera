@@ -149,7 +149,7 @@ There are following common characteristics with all feature variables
 
 ###Variable names for feature variables
 
-Feature variables occupy columns [3:68] in tidy dataset. To get names of all feature variables issue command `> names(tData)[3:68]`
+Feature variables occupy columns [3:68] in tidy dataset. Feature variable's names are listed below. To get an idea of what each variable measures see chapter "Details of feature variables naming convention" in this document. 
 
 [1] "meanoftimedomainBodyAccmeanX"                 "meanoftimedomainBodyAccmeanY"                
  [3] "meanoftimedomainBodyAccmeanZ"                 "meanoftimedomainBodyAccstdX"                 

@@ -255,5 +255,5 @@ run_analysis <- function(){
     
     # Save dataset into local disk under working directory
     
-    write.table(tidyDataSet, file="./tidyDataSet.txt")
+    write.table(tidyDataSet, file="./tidyDataSet.txt", row.names = FALSE)
 }

@@ -6,16 +6,22 @@ run_analysis <- function(){
     library(dplyr)
     
     # Download Human Activity Recognition Using Smartphones (HARUS for short) Data Set  (a zip file).
-    # We download this file into temporay file created in local file system.
+    #
+    # NOTE: since plain http works we use it to avoid possible platform specific problems.
     
-    humanActivityDataSetUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+    humanActivityDataSetUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
     
-    # Create temporary file name for HARUS data set zip file and save data set zip into that name.
-    tempFileForDataSet <- tempfile()
-    download.file(humanActivityDataSetUrl,tempFileForDataSet)
+    destinationFile <- "./HARUS.zip"
+    
+    humanActivityDataSetFile <- download.file(humanActivityDataSetUrl, destfile = destinationFile)
+    
+    # Unzip data set into R's working directory 
+    
+    unzip("./HARUS.zip")
     
     
-    rootDirectoryInZipFile = "UCI HAR Dataset/"
+    rootDirectoryInZipFile <- ("./UCI HAR Dataset/")
+    
     
     # ###########################################################################################
     #
@@ -33,7 +39,7 @@ run_analysis <- function(){
     # File is read into R with read_fwf since X_train.txt is fixed width file with 16 characters
     # per field.
     
-    trainingDataFilePath = paste(rootDirectoryInZipFile, "/train/X_train.txt", sep ="")
+    trainingDataFilePath = paste(rootDirectoryInZipFile, "train/X_train.txt", sep ="")
     trainingData <- read_fwf(trainingDataFilePath, fwf_widths(as.vector(rep(16,561), "numeric"))) 
 
     
@@ -63,7 +69,7 @@ run_analysis <- function(){
     # testing activity labels and subject_test.txt for subjects that performed activities in test set)
     # As a result we get combinedTestSet data analogously what has been made for training data above.
     
-    testDataFilePath = paste(rootDirectoryInZipFile, "/test/X_test.txt", sep ="")
+    testDataFilePath = paste(rootDirectoryInZipFile, "test/X_test.txt", sep ="")
     testData <- read_fwf(testDataFilePath, fwf_widths(as.vector(rep(16,561), "numeric")))
 
     activityLabelsForTestFilePath = paste(rootDirectoryInZipFile, "test/y_test.txt", sep ="")
@@ -248,7 +254,8 @@ run_analysis <- function(){
 
     # Remove HARUS data set zip file created in the beginning of the script.
     
-    unlink(tempFileForDataSet)
+    unlink(destinationFile, recursive = TRUE)
+    unlink(rootDirectoryInZipFile)
     
     # Save dataset into local disk under working directory
     

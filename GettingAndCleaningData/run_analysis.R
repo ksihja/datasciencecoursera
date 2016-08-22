@@ -29,10 +29,6 @@ run_analysis <- function(){
     #
     #############################################################################################
     
-    # NOTE: Reading needed files into R: zip file is not extracted (unzipped) into file system. 
-    # Required files are directly read from zip into R 
-    # with unz function (unzipping made in memory on the fly).
-    
     
     # 1A.) Reading trainig set train/X_train.txt. This file contains values for 561 features for 
     # those subjects who has been selected to be part of training set.

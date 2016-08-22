@@ -86,7 +86,7 @@ Basically you could still modify feature names more (convert "Acc" to "Accelomet
 
 As a last step modified feature names are inserted into data frames names()  after first 3 columns.
 
-As a result we get data frame with 10299 rows and 69 columns. Columns are like: "subjectid", "activityname", "activityid" followed by 66 filtered feature columns where naming is now descriptive (i.e feature column with name "V1" is changed to "ttimedomainBodyAccmeanX" and so on).
+As a result we get data frame with 10299 rows and 69 columns. Columns are like: "subjectid", "activityname", "activityid" followed by 66 filtered feature columns where naming is now descriptive (i.e feature column with name "V1" is changed to "timedomainBodyAccmeanX" and so on).
 
 * Step 5 ("From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject):
 

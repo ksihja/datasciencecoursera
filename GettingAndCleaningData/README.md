@@ -28,7 +28,7 @@ Processing steps in run_analysis() script itself contains more detailed informat
 
 * First step in script is to download [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) (HARUS for short later in text). Downloading is made over http since that seems to work too and we can thus avoid some of the [problems specific for the computers OS] (http://rpubs.com/thoughtfulbloke/downloadtips).
 
-* Step 1 ("Merges the training and the test sets to create one data set"): 
+* Process data according to Step 1 in assignment ("Merges the training and the test sets to create one data set"): 
 
 Read all files that are needed for this step.  
 
